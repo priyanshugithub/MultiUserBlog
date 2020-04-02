@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="comment">{{content}}</div>
+	<div>{{message}}</div>
+	<form method="post">
+		<input type="submit" value="Confirm">
+	</form>
+	<a href="/{{post_id}}">Cancel and go back to post</a>
+{% endblock %}
